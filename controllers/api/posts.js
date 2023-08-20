@@ -26,5 +26,6 @@ async function create(req, res) {
   } catch (err) {
     console.log(err);
     res.status(400).json(err);
+    // useless comment can be deleted
   }
 }

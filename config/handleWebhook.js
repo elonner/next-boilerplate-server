@@ -21,7 +21,7 @@ const handleWebhook = async (req, res) => {
         await axios.post("http://localhost:4000/api/users", msg);
       } catch (error) {
         console.error("Error:", error);
-        return res.status(500).json({});
+        return res.status(400).json({});
       }
       break;
     default:

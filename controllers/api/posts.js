@@ -8,7 +8,7 @@ module.exports = {
 
 async function index(req, res) {
   try {
-    const posts = await Post.find({});
+    const posts = await Post.find({}).populate("user");
     res.json(posts);
   } catch (err) {
     console.log(err);
@@ -26,6 +26,5 @@ async function create(req, res) {
   } catch (err) {
     console.log(err);
     res.status(400).json(err);
-    // useless comment can be deleted
   }
 }

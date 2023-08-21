@@ -11,7 +11,6 @@ async function index(req, res) {
     const posts = await Post.find({}).populate("user");
     res.json(posts);
   } catch (err) {
-    console.log(err);
     res.status(400).json(err);
   }
 }

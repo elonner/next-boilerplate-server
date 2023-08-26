@@ -19,6 +19,7 @@
     "mongoose": "^7.4.1",
     "morgan": "^1.10.0",
     "nodemon": "^3.0.1",
+    "stream-chat": "^8.11.0",
     "stripe": "^13.2.0",
     "svix": "^1.8.1"
   }

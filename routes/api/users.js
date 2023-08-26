@@ -5,5 +5,7 @@ const bodyParser = require("body-parser");
 
 // POST /api/users
 router.post("/", usersCtrl.create);
+// GET /api/users/token/:clerkId
+router.get("/token/:clerkId", usersCtrl.getToken);
 
 module.exports = router;
